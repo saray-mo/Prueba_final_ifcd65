@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#" method="post" id="survey-form">
+        <div class="datos">
+
+            <h2 class="form-registro"></h2>
+            <label for="name" id="name-label">Nombre</label>
+            <input class="controls" type="text" id="name" name="nombre" placeholder="Inserta un nombre "
+                pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/" required>
+            <label for="name" id="name-label">Apellidos</label>
+            <input class="controls" type="text" id="Apellidos" name="apellidos" placeholder="Inserta los apellidos"
+                pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/" required>
+            <label for="email" id="email-label">Correo electrico</label>
+            <input class="controls" type="email" id="email" name="Correo" placeholder="Inserta un correo"
+                pattern="/^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/" required>
+            <label for="name" id="name-label">Num. de contacto</label>
+            <input class="controls" type="text" id="contacto" name="contacto"
+                placeholder="Num. de contacto"required>
+                <h2> Motivo del contacto</h2>
+
+
+            <select name="descripcion" id="dropdown">
+                    <option value="Duda ">Duda</option><br>
+                    <option value="Reclamacion">Reclamacion</option><br>
+                    <option value="Informacion">Informacion</option><br>
+                    <option value="Otros">Otros</option><br>
+                    </select><br>
+        
+            <h2>Descripcion del problema </h2>
+             <textarea name="opinion" id="opinion" cols="30" rows="10"></textarea><br>
+
+             
+             <!-- <button type="button" onclick="alert ('Gracias por rellenar el formulario')">boton</button> -->
+             <button class="btn" type="submit" id="submit">Enviar</button>
+           </div>
+    
+</body>
+</html>
